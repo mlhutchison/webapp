@@ -4,11 +4,11 @@ import Recipe from './Recipe';
 
 
 const App = () => {
-  const APP_ID = '82357c12';
-  const APP_KEY = '6c5f69cb2d25926d5499042456a310a0';
+  const APP_ID = '###########';
+  const APP_KEY = '#############';
   var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   
-  const [query, setQuery] = useState('chicken');
+  const [query, setQuery] = useState('');
   var myUrl = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
  
   const [recipes, setRecipes] = useState([]);
